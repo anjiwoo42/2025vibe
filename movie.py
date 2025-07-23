@@ -1,6 +1,4 @@
 import streamlit as st
-
-# 최근 5년간 극장 개봉한 한국 영화 + 일본 애니메이션 (OTT 링크 포함)
 MOVIES = {
     "웃고 싶어요 (코미디/로맨스)": [
         {"title": "극한직업 (한국, 2019)", "link": "https://www.netflix.com/title/81293933"},
