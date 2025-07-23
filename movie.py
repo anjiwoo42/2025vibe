@@ -26,7 +26,7 @@ MOVIES =  {
     ]
 }
 st.set_page_config(page_title="🎥 한국·일본 영화 추천", layout="centered")
-st.title("🎬 기분 따라 고르는 한국 + 일본 애니메이션 영화")
+st.title("🎬 기분 따라 고르는 한국 + 애니메이션 영화")
 
 st.markdown("극장에서 개봉한 **한국 실사 영화**와 **일본 애니메이션**만 모아 기분 따라 추천해드려요!")
 
