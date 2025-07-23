@@ -14,7 +14,6 @@ MOVIES = {
     {"title": "연애 빠진 로맨스 (한국, 2021)", "link": "https://www.wavve.com/player/movie?movieid=MV_K01_M2021A0009"},
     {"title": "너의 이름은. (일본, 재개봉)", "link": "https://watcha.com/contents/mdRdk5Y"}
 ]
-
     ],
     "답답한 기분 풀고 싶어요 (액션/사이다)": [
         {"title": "범죄도시 4 (한국, 2024)", "link": "https://www.tving.com/contents/P001774126"},
