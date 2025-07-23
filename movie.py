@@ -1,6 +1,5 @@
 import streamlit as st
-MOVIES = 
-    "웃고 싶어요 (코미디/로맨스)": [
+MOVIES =  "웃고 싶어요 (코미디/로맨스)": [
         {"title": "극한직업 (한국, 2019)", "link": "https://www.netflix.com/title/81293933"},
         {"title": "정직한 후보 (한국, 2020)", "link": "https://www.tving.com/contents/P001548768"},
         {"title": "연애 빠진 로맨스 (한국, 2021)", "link": "https://www.wavve.com/player/movie?movieid=MV_K01_M2021A0009"},
