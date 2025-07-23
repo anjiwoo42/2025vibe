@@ -14,9 +14,6 @@ MOVIES = {
         {"title": "소울메이트 (한국, 2023)", "link": "https://www.netflix.com/kr/title/81788270"},
         {"title": "스즈메의 문단속 (일본, 2023)", "link": "https://www.netflix.com/title/81716838"},
         {"title": "너의 이름은. (일본, 재개봉)", "link": "https://watcha.com/contents/mdRdk5Y"}
-    ]
-    # 다른 카테고리도 같은 구조로 추가...
-}
     ],
     "답답한 기분 풀고 싶어요 (액션/사이다)": [
         {"title": "범죄도시 4 (한국, 2024)", "link": "https://www.tving.com/contents/P001774126"},
