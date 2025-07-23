@@ -2,18 +2,21 @@ import streamlit as st
 
 # 최근 5년간 극장 개봉한 한국 영화 + 일본 애니메이션 (OTT 링크 포함)
 MOVIES = {
+    "웃고 싶어요 (코미디/로맨스)": [
+        {"title": "극한직업 (한국, 2019)", "link": "https://www.netflix.com/title/81293933"},
+        {"title": "정직한 후보 (한국, 2020)", "link": "https://www.tving.com/contents/P001548768"},
+        {"title": "연애 빠진 로맨스 (한국, 2021)", "link": "https://www.wavve.com/player/movie?movieid=MV_K01_M2021A0009"},
+        {"title": "너의 이름은. (일본, 재개봉)", "link": "https://watcha.com/contents/mdRdk5Y"}
+    ],
+
     "힐링이 필요해요 (감동/드라마)": [
         {"title": "윤희에게 (한국, 2019)", "link": "https://watcha.com/contents/mW9p1o7"},
         {"title": "소울메이트 (한국, 2023)", "link": "https://www.netflix.com/kr/title/81788270"},
         {"title": "스즈메의 문단속 (일본, 2023)", "link": "https://www.netflix.com/title/81716838"},
         {"title": "너의 이름은. (일본, 재개봉)", "link": "https://watcha.com/contents/mdRdk5Y"}
-    ],
-   "웃고 싶어요 (코미디/로맨스)": [
-    {"title": "극한직업 (한국, 2019)", "link": "https://www.netflix.com/title/81293933"},
-    {"title": "정직한 후보 (한국, 2020)", "link": "https://www.tving.com/contents/P001548768"},
-    {"title": "연애 빠진 로맨스 (한국, 2021)", "link": "https://www.wavve.com/player/movie?movieid=MV_K01_M2021A0009"},
-    {"title": "너의 이름은. (일본, 재개봉)", "link": "https://watcha.com/contents/mdRdk5Y"}
-]
+    ]
+    # 다른 카테고리도 같은 구조로 추가...
+}
     ],
     "답답한 기분 풀고 싶어요 (액션/사이다)": [
         {"title": "범죄도시 4 (한국, 2024)", "link": "https://www.tving.com/contents/P001774126"},
