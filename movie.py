@@ -7,7 +7,7 @@ MOVIES = {
         {"title": "정직한 후보 (한국, 2020)", "link": "https://www.tving.com/contents/P001548768"},
         {"title": "연애 빠진 로맨스 (한국, 2021)", "link": "https://www.wavve.com/player/movie?movieid=MV_K01_M2021A0009"},
         {"title": "너의 이름은. (일본, 재개봉)", "link": "https://watcha.com/contents/mdRdk5Y"}
-    ],
+    ]
 
     "힐링이 필요해요 (감동/드라마)": [
         {"title": "윤희에게 (한국, 2019)", "link": "https://watcha.com/contents/mW9p1o7"},
