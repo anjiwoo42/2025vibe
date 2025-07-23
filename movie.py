@@ -1,5 +1,6 @@
 import streamlit as st
-MOVIES =  "웃고 싶어요 (코미디/로맨스)": [
+MOVIES =  {
+        "웃고 싶어요 (코미디/로맨스)": [
         {"title": "극한직업 (한국, 2019)", "link": "https://www.netflix.com/title/81293933"},
         {"title": "정직한 후보 (한국, 2020)", "link": "https://www.tving.com/contents/P001548768"},
         {"title": "연애 빠진 로맨스 (한국, 2021)", "link": "https://www.wavve.com/player/movie?movieid=MV_K01_M2021A0009"},
@@ -23,7 +24,7 @@ MOVIES =  "웃고 싶어요 (코미디/로맨스)": [
         {"title": "너와 파도를 탈 수 있다면 (일본, 2020)", "link": "https://watcha.com/contents/mOkb1Rd"},
         {"title": "수에비움: 나와 그녀와 그녀의 세계 (일본, 2023)", "link": "https://www.wavve.com/player/movie?movieid=MV_K02_M2023A0117"}
     ]
-    
+}
 st.set_page_config(page_title="🎥 한국·일본 영화 추천", layout="centered")
 st.title("🎬 기분 따라 고르는 한국 + 일본 애니메이션 영화")
 
