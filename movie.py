@@ -1,37 +1,39 @@
 import streamlit as st
 
-# 최신 영화 + 감상 플랫폼 링크 포함
+# 최근 5년간 극장 개봉한 한국 영화 + 일본 애니메이션 (OTT 링크 포함)
 MOVIES = {
     "힐링이 필요해요 (감동/드라마)": [
-        {"title": "마당을 나온 암탉 (한국)", "link": "https://www.wavve.com/player/movie?movieid=MV_K01_M2022A0002"},
-        {"title": "윤희에게 (한국)", "link": "https://watcha.com/contents/mW9p1o7"},
-        {"title": "CODA (미국)", "link": "https://tv.apple.com/kr/movie/coda/umc.cmc.3yxfsy2y5v0xz5vjrp8zlqrp6"},
-        {"title": "더 웨일 (미국)", "link": "https://www.coupangplay.com/movies/whale-2022"}
+        {"title": "윤희에게 (한국, 2019)", "link": "https://watcha.com/contents/mW9p1o7"},
+        {"title": "소울메이트 (한국, 2023)", "link": "https://www.netflix.com/kr/title/81788270"},
+        {"title": "스즈메의 문단속 (일본, 2023)", "link": "https://www.netflix.com/title/81716838"},
+        {"title": "너의 이름은. (일본, 재개봉)", "link": "https://watcha.com/contents/mdRdk5Y"}
     ],
-    "웃고 싶어요 (코미디/로맨스)": [
-        {"title": "극한직업 (한국)", "link": "https://www.netflix.com/title/81293933"},
-        {"title": "정직한 후보 (한국)", "link": "https://www.tving.com/contents/P001548768"},
-        {"title": "바비 (미국)", "link": "https://www.coupangplay.com/movies/barbie"},
-        {"title": "로스트 시티 (미국)", "link": "https://www.paramountplus.com/movies/the-lost-city/"}
+   "웃고 싶어요 (코미디/로맨스)": [
+    {"title": "극한직업 (한국, 2019)", "link": "https://www.netflix.com/title/81293933"},
+    {"title": "정직한 후보 (한국, 2020)", "link": "https://www.tving.com/contents/P001548768"},
+    {"title": "연애 빠진 로맨스 (한국, 2021)", "link": "https://www.wavve.com/player/movie?movieid=MV_K01_M2021A0009"},
+    {"title": "너의 이름은. (일본, 재개봉)", "link": "https://watcha.com/contents/mdRdk5Y"}
+]
+
     ],
     "답답한 기분 풀고 싶어요 (액션/사이다)": [
-        {"title": "범죄도시 4 (한국)", "link": "https://www.tving.com/contents/P001774126"},
-        {"title": "헌트 (한국)", "link": "https://watcha.com/contents/m5b9xZk"},
-        {"title": "존 윅 4 (미국)", "link": "https://play.google.com/store/movies/details/존_윅_4?id=UwA-sCgvoNw.P"},
-        {"title": "불렛 트레인 (미국)", "link": "https://watcha.com/contents/mW1ldA1"}
+        {"title": "범죄도시 4 (한국, 2024)", "link": "https://www.tving.com/contents/P001774126"},
+        {"title": "헌트 (한국, 2022)", "link": "https://watcha.com/contents/m5b9xZk"},
+        {"title": "극장판 주술회전 0 (일본, 2022)", "link": "https://www.netflix.com/title/81715869"},
+        {"title": "명탐정 코난: 흑철의 어영 (일본, 2023)", "link": "https://watcha.com/contents/mW93m9P"}
     ],
     "마음이 공허해요 (감성/인생)": [
-        {"title": "밤의 문이 열린다 (한국)", "link": "https://www.filmmarket.or.kr/movie/detail.asp?movie_seq=21022"},
-        {"title": "소울메이트 (한국)", "link": "https://www.netflix.com/kr/title/81788270"},
-        {"title": "에브리씽 에브리웨어 올 앳 원스", "link": "https://watcha.com/contents/mOk5XQo"},
-        {"title": "애프터썬 (영국)", "link": "https://www.wavve.com/player/movie?movieid=MV_K01_M2023A0114"}
+        {"title": "남매의 여름밤 (한국, 2020)", "link": "https://www.wavve.com/player/movie?movieid=MV_K01_M2020A0003"},
+        {"title": "밤의 문이 열린다 (한국, 2021)", "link": "https://www.filmmarket.or.kr/movie/detail.asp?movie_seq=21022"},
+        {"title": "너와 파도를 탈 수 있다면 (일본, 2020)", "link": "https://watcha.com/contents/mOkb1Rd"},
+        {"title": "수에비움: 나와 그녀와 그녀의 세계 (일본, 2023)", "link": "https://www.wavve.com/player/movie?movieid=MV_K02_M2023A0117"}
     ]
 }
 
-st.set_page_config(page_title="기분 따라 최신 영화 추천", layout="centered")
-st.title("🎬 기분 따라 한국 + 해외 영화 추천")
+st.set_page_config(page_title="🎥 한국·일본 영화 추천", layout="centered")
+st.title("🎬 기분 따라 고르는 한국 + 일본 애니메이션 영화")
 
-st.markdown("지금 내 기분에 딱 맞는 최신 영화와 감상 사이트 링크까지 한눈에 보기!")
+st.markdown("극장에서 개봉한 **한국 실사 영화**와 **일본 애니메이션**만 모아 기분 따라 추천해드려요!")
 
 mood = st.selectbox("💭 지금 내 기분은?", list(MOVIES.keys()))
 
@@ -41,4 +43,4 @@ if st.button("🎥 영화 추천받기"):
         st.markdown(f"- [{movie['title']}]({movie['link']})")
 
 st.markdown("---")
-st.caption("💡 OTT 링크는 변동될 수 있어요. 원하는 플랫폼이 있으면 그에 맞춰 더 정리해드릴게요!")
+st.caption("📌 OTT 링크는 변동될 수 있어요. 넷플릭스, 왓챠, 웨이브, 티빙 위주로 링크를 제공했습니다.")
