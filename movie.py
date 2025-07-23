@@ -24,6 +24,13 @@ MOVIES =  {
         {"title": "너와 파도를 탈 수 있다면 (일본, 2020)", "link": "https://watcha.com/contents/mOkb1Rd"},
         {"title": "수에비움: 나와 그녀와 그녀의 세계 (일본, 2023)", "link": "https://www.wavve.com/player/movie?movieid=MV_K02_M2023A0117"}
     ]
+
+    "상영중 한국 영화 (극장)": [
+        {"title": "야당 (한국, 2025)", 
+         "link": "https://www.cgv.co.kr/movies/detail-view/?midx=10000000"},  # 예시
+        {"title": "악마가 이사왔다 (한국, 2025)", 
+         "link": "https://www.cgv.co.kr/movies/detail-view/?midx=10000001"}
+]
 }
 st.set_page_config(page_title="🎥 한국·일본 영화 추천", layout="centered")
 st.title("🎬 기분 따라 고르는 한국 + 애니메이션 영화")
